@@ -1,0 +1,28 @@
+python pyoaiharvest.py -l 'http://localhost:9080/solr/oai' -s monograph -o mono
+
+python pyoaiharvest.py -l 'http://camea2.svkos.cz/oai/' -s monograph -m oai_dc -o monograph.xml
+
+
+-f
+--from
+     harvest records from this date, format: yyyy-mm-dd
+
+-l
+--link
+     URL of repository
+
+-m
+--mdprefix
+     use the specified metadata format, default="oai_dc"
+
+-o
+--filename
+     write repository to file
+
+-s
+--setName
+     harvest the specified set
+
+-u
+--until
+     harvest records until this date, format: yyyy-mm-dd
